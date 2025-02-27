@@ -1,3 +1,30 @@
 [build-system]
 requires = ["setuptools", "wheel"]
 build-backend = "setuptools.build_meta"
+
+[project]
+name = "whisper-transcribe-cli"
+version = "0.1.2"
+description = "A command-line tool to transcribe video and audio files using OpenAI's Whisper model."
+requires-python = ">=3.8"
+license = { text = "MIT" }
+dependencies = ['typer[all]', 'watchdog', 'openai-whisper']
+authors = [
+    { name = "Siddhesh Desai", email = "siddheshdesai777@gmail.com" }
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Multimedia :: Sound/Audio :: Speech"
+]
+keywords = ["whisper", "transcribe", "cli", "command-line", "audio", "video", "speechtotext"]
+
+[project.urls]
+Repository = "https://github.com/siddhesh-desai/whisper-transcribe-cli"
