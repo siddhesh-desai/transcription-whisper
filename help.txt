@@ -1,0 +1,13 @@
+Steps to build the package and push to PyPi -
+
+    cd whisper-transcribe-cli
+
+    rm -Recurse -Force build, dist, *.egg-info
+
+    python setup.py sdist bdist_wheel
+
+    pip install --force-reinstall dist\whisper_transcribe_cli-0.1.1-py3-none-any.whl
+
+    twine upload dist/*   
+
+    pip install whisper-transcribe-cli==0.1.1

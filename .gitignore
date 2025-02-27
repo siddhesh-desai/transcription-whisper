@@ -1,0 +1,7 @@
+venv/
+.env
+/__pycache__/
+
+whisper-transcribe-cli/*.egg-info/
+whisper-transcribe-cli/dist/
+whisper-transcribe-cli/build/
